@@ -12,7 +12,7 @@ const graphStateChannels: StateGraphArgs<HelloWorldGraphState>["channels"] =
   {
     name: {
         value: (prevName: string, newName: string) => newName,
-        default: () => "Ada Lovelace",
+        default: () => "Hermoine Granger",
      },
       isHuman: {
         value: (prevIsHuman: boolean, newIsHuman: boolean) =>
@@ -25,7 +25,7 @@ const graphStateChannels: StateGraphArgs<HelloWorldGraphState>["channels"] =
 function sayHello(state: HelloWorldGraphState) {
     console.log(`Hello ${state.name}!`); // Change the name
   
-    const newName = "Bill Nye";
+    const newName = "Harry Potter";
   
     console.log(`Changing the name to '${newName}'`);
   
